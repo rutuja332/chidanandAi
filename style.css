@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: url("https://www.parmarth.org/wp-content/uploads/2020/07/Guru-Purnima-2020-31.jpg") no-repeat center top fixed;
+  background-size: 100%;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding-left: 600px;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #333;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-container .form-group label {
+  color: #666;
+}
+
+.btn-primary {
+  background-color: #007BFF;
+  border-color: #007BFF;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-link {
+  color: #007BFF;
+}
+
+#chatSection {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  body {
+    background-size: 200%;
+    justify-content: center;
+  }
+
+  .container {
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .form-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  #chatSection {
+    padding: 20px;
+    max-width: 90%;
+  }
+}
+
+/* Media Queries for Small Devices */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 15px;
+    max-width: 95%;
+  }
+
+  #chatSection {
+    padding: 15px;
+    max-width: 95%;
+  }
+}
